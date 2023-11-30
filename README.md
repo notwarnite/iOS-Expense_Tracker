@@ -1,4 +1,4 @@
-# A Simple Expense Tracker App 📱
+# An Expense Tracker App 📱
 
 Built to demonstrate the use of SwiftUI and Swift Data.
 
