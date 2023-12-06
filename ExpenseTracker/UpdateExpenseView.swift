@@ -14,10 +14,21 @@ struct UpdateExpenseView: View {
     var body: some View {
         NavigationStack {
             Form {
-                TextField("Expense Name", text: $expense.name)
-                DatePicker("Date", selection: $expense.date, displayedComponents: .date)
-                TextField("Value", value: $expense.value, format: .currency(code: "USD"))
-                    .keyboardType(.decimalPad)
+                Section {
+                    TextField("Amount", value: $expense.value, format: .currency(code: "USD"))
+                        .keyboardType(.decimalPad)
+                } header: {
+                    Text("Enter Amount")
+                }
+                Section {
+                    TextField("Description", text: $expense.name)
+                } header: {
+                    Text("Description")
+                }
+                
+                Section{
+                    DatePicker("Date", selection: $expense.date, displayedComponents: .date)
+                }
             }
             .navigationTitle("Update Expense")
             .toolbar {
