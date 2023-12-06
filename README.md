@@ -1,6 +1,11 @@
-# A Simple Expense Tracker App 📱
+# An Expense Tracker App 📱
 
 Built to demonstrate the use of SwiftUI and Swift Data.
+
+# Built With 🛠
+
+[SwiftUI](https://developer.apple.com/xcode/swiftui/) - SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.\
+[SwiftData](https://developer.apple.com/xcode/swiftdata/) - Framework used to manage the model layer objects in the application.
 
 ## Screenshots
 
